@@ -1,5 +1,5 @@
 ---
-title: "Reinventing OOP: Falling of 4 Pillars"
+title: "Reinventing OOP. Part 1: Falling of 4 Pillars"
 date: 2026-09-21T11:30:57+03:00
 author: "Me"
 showToc: true
