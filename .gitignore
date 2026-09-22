@@ -1,0 +1,17 @@
+# Generated site directory (do not track production builds)
+/public/
+
+# Local cache and generated resources (e.g., processed images, asset minification)
+/resources/_gen/
+.hugo_build.lock
+
+# Optional: Ignore asset cache directory if you use it locally
+/assets/jsconfig.json
+
+# Hardcoded OS-specific files
+.DS_Store
+Thumbs.db
+
+# Developer environment logs or local backups
+*.log
+.backup
