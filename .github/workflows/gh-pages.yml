@@ -9,25 +9,22 @@ on:
     branches:
       - master
   workflow_dispatch:
-    # manual run
     inputs:
       hugoVersion:
-        description: "Hugo Version"
+        description: "Hugo Version (e.g., latest or 0.140.0)"
         required: false
         default: "latest"
 
-# Allow one concurrent deployment
+# Разрешаем только одно развертывание одновременно
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
-# Default to bash
 defaults:
   run:
     shell: bash
 
 jobs:
-  # Build job
   build:
     permissions:
       contents: read
@@ -35,37 +32,35 @@ jobs:
     env:
       HUGO_VERSION: ${{ github.event.inputs.hugoVersion || 'latest' }}
     steps:
-      - name: Resolve Hugo version
-        run: |
-          if [ "${HUGO_VERSION}" = "latest" ]; then
-            HUGO_VERSION=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep '"tag_name"' | sed 's/.*"v\([^"]*\)".*/\1/')
-            echo "HUGO_VERSION=${HUGO_VERSION}" >> $GITHUB_ENV
-          fi
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-      - name: Checkout
-        uses: actions/checkout@v6
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          ref: exampleSite
+          submodules: recursive # Автоматически клонирует тему из .gitmodules
+          fetch-depth: 0 # Рекомендуется для Hugo, чтобы работали переменные .GitInfo (даты коммитов и т.д.)
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true # Обязательно для тем, использующих SCSS/Sass
+
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v6
-      - name: Get Theme
-        run: git submodule update --init --recursive
-      - name: Update theme to Latest commit
-        run: git submodule update --remote --merge
+        uses: actions/configure-pages@v5
+
       - name: Build with Hugo
         run: |
           hugo \
-            --buildDrafts --gc \
-            --baseURL ${{ steps.pages.outputs.base_url }}
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
+        # Примечание: флаг --buildDrafts удален, чтобы черновики не попадали на продакшен.
+        # Если вам нужно публиковать черновики, добавьте его обратно.
+
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v5
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
-  # Deployment job
+
   deploy:
     permissions:
       pages: write
@@ -78,4 +73,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v4
