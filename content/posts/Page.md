@@ -4,7 +4,7 @@ date: 2026-09-21T11:30:57+03:00
 author: "Me"
 showToc: true
 TocOpen: false
-draft: false
+draft: true
 hidemeta: false
 comments: false
 description: "Desc Text."
