@@ -44,10 +44,10 @@ params:
   assets:
     # disableHLJS: true # to disable highlight.js
     disableFingerprinting: true
-    favicon: "images/favicon/favicon.ico"
-    favicon16x16: "images/favicon/favicon-16x16.png"
-    favicon32x32: "images/favicon/favicon-32x32.png"
-    apple_touch_icon: "images/favicon/apple-touch-icon.png"
+    favicon: "/images/favicon/favicon.ico"
+    favicon16x16: "/images/favicon/favicon-16x16.png"
+    favicon32x32: "/images/favicon/favicon-32x32.png"
+    apple_touch_icon: "/images/favicon/apple-touch-icon.png"
     # safari_pinned_tab: "<link / abs url>"
 
   label:
@@ -60,7 +60,7 @@ params:
     enabled: true # needs to be explicitly set
     title: BinTree
     subtitle: "The computing blog by Stas Yankovskiy"
-    imageUrl: "images/avatar.jpeg"
+    imageUrl: "/images/avatar.jpeg"
     imageWidth: 120
     imageHeight: 120
     imageTitle: avatar
