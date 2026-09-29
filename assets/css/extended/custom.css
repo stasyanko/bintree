@@ -1,0 +1,42 @@
+/* Убираем растягивание профиля на весь экран */
+.main .profile,
+body .profile,
+.profile {
+    min-height: auto !important;
+    height: auto !important;
+    max-height: none !important;
+    padding-bottom: 20px !important;
+    margin-bottom: 0 !important;
+}
+
+/* Уменьшаем отступы вокруг профиля */
+.profile_inner {
+    margin-bottom: 30px !important;
+    padding-bottom: 0 !important;
+}
+
+/* Убираем лишний отступ между профилем и первым постом */
+.profile + article,
+.profile ~ article:first-of-type,
+.profile + .post-entry,
+.profile ~ .post-entry:first-of-type {
+    margin-top: 0 !important;
+    padding-top: 20px !important;
+}
+
+/* Если первый пост имеет класс first-entry */
+.first-entry {
+    margin-top: 0 !important;
+    padding-top: 20px !important;
+    min-height: auto !important;
+}
+
+/* Убираем отступы у контейнера main */
+.main {
+    padding-bottom: 20px !important;
+}
+
+/* Убираем отступы у первого article после profile */
+.profile ~ .post-entry {
+    margin-top: 10px !important;
+}
