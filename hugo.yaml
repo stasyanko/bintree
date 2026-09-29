@@ -17,8 +17,8 @@ params:
   mainSections: ["posts"]
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: BinTree
-  description: "BinTree description"
-  keywords: [Blog, Portfolio, PaperMod]
+  description: "Stas Yankovskiy blogging about software engineering, OOP, programming paradigms, automated testing."
+  keywords: ["Software Engineering", "Object-Oriented Programming", "OOP", "Programming Paradigms", "Automated Testing", "Software Development", "Clean Code", "Software Architecture", "Test-Driven Development", "TDD", "Tech Blog", "Stas Yankovskiy"]
   author: Stas Yankovskiy
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
