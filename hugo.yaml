@@ -81,9 +81,9 @@ params:
     - name: X
       url: "https://x.com/bintree_xxl"
 
-  analytics:
-    google:
-      SiteVerificationTag: "GTM-MQGRJGM5"
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: ""
 
   cover:
     hidden: false # hide everywhere but not in structured data
@@ -130,3 +130,6 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
+services:
+  googleAnalytics:
+    id: GTM-MQGRJGM5
