@@ -78,6 +78,8 @@ params:
   socialIcons:
     - name: github
       url: "https://github.com/stasyanko"
+    - name: X
+      url: "https://x.com/bintree_xxl"
 
   analytics:
     google:
