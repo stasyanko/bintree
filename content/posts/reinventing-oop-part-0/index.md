@@ -88,7 +88,7 @@ In this series of articles, we will do the following:
 - understand which science should form the basis of OOP
 - define the terms "object" and "object-oriented system" from scratch
 - build a language from scratch that describes object interaction
-- formulate new principles of OOP instead of the four traditional pillars
+- **formulate new principles of OOP instead of the four traditional pillars**
 - identify four types of OOP
 
 ## Who Is This Series For
