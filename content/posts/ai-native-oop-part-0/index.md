@@ -6,7 +6,6 @@ weight: 1
 series: 
   - "AI-native OOP"
 description: "Forget the four pillars. A new, scientifically grounded OOP based on black boxes and messages — universal, simple, and built for the AI era."
-summary: "The old four pillars of OOP are ruins. This manifesto introduces AI-Native OOP: a universal foundation based on black boxes and message passing. Simple enough for non-programmers, strict enough for static analysis. In this series, we build a new system design language where humans architect the vision, and AI generates the code."
 tags:
   - OOP
   - AI-Native
@@ -41,11 +40,11 @@ cover:
 
 Forget about them. Seriously. 
 
-In this series of articles, we will build a new, scientifically proven foundation for Object-Oriented Programming (OOP). It has almost nothing to do with the four old pillars that students have been memorizing in universities for decades.
+In this series of articles, we will build a new, scientifically proven foundation for Object-Oriented Programming (OOP). <!--more--> It has almost nothing to do with the four old pillars that students have been memorizing in universities for decades.
 
 ![Four Pillars Of OOP](four-pillars-oop.webp)
 
-The new foundation of OOP is as simple as a children's building block set and as precise as math. It is based on just two things: **black boxes** and **message passing** between them. 
+The new foundation of OOP is as simple as a children's building block set and as precise as math. It is based on just two things: **black boxes** and **message passing** between them.
 
 In this series, we won't just criticize the old way. We will announce a manifesto for a new approach and, step by step, create a new OOP theory. This theory will allow anyone — even people far from coding — to effectively design complex software systems.
 
