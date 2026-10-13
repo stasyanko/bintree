@@ -65,7 +65,7 @@ But what if there was a universal language for designing systems?
 
 In this series, we offer not just a new language to describe and design systems, but also new Object-Oriented Programming principles. These principles will be useful and easy to understand for both programmers and people who help design systems but don't write code. 
 
-![Designing Programming System](designing-programming-system.png)
+![Designing Programming System](designing-programming-system.webp)
 
 This includes analysts, managers, testers, as well as company leaders and department heads. 
 
