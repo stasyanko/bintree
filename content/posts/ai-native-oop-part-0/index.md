@@ -1,10 +1,10 @@
 ---
-title: "[Reinventing OOP] Part 0: The Blueprint"
+title: "[AI-native OOP] Part 0: The Blueprint"
 date: 2026-10-12
-draft: false
+draft: true
 weight: 1
 series: 
-  - "Reinventing OOP"
+  - "AI-native OOP"
 description: "Encapsulation, Polymorphism, Inheritance, Abstraction. What if the four pillars of OOP are actually its ruins? A manifesto to reinvent OOP from scratch."
 summary: "We've been taught that encapsulation, polymorphism, inheritance, and abstraction are the unbreakable pillars of OOP. But what if they are actually its ruins? In Part 0 of the Reinventing OOP series, we challenge the dogmas and promise to rebuild the paradigm from the ground up."
 tags:
@@ -110,16 +110,13 @@ If you just want to learn another pattern or framework — this series isn't for
 
 ## Series Map
 
-- [x] 🚀 **Part 0. The Blueprint**
-- [ ] 🎯 **Part 1. The Main Purpose Of OOP**
-- [ ] 🏛️ **Part 2. The Falling Of Four OOP Pillars**
-- [ ] ⚛️ **Part 3. The Main Principle Of OOP**
-- [ ] 🔬 **Part 4. The Scientific Basis Of OOP**
-- [ ] 🧩 **Part 5. Objects, Components, Messages**
-- [ ] 🏗️ **Part 6. MOBBLOC Principles**
-- [ ] 🛠️ **Part 7. Creating Object-Oriented Language From Scratch** 
-- [ ] 📋 **Part 8. The Four Types Of OOP**
-- [ ] 🐹 **Part 9. Choosing The Mascot For MOBBLOC Principles**
+- [x] 🚀 Part 0. Zero To One (The Blueprint)
+- [ ]  Part 1. The True Essence of OOP: Black Boxes and Message Passing
+- [ ]  Part 2. Objects, Components, Messages
+- [ ] 🏗️ Part 3. The MOBBLOC Principles
+- [ ] 🛠️ Part 4. Creating the AI-Native OOP Language From Scratch 
+- [ ] 📋 Part 5. The Four Types Of OOP
+- [ ] 🐹 Part 6. Choosing The Mascot For MOBBLOC Principles
 
 **As you read this series, I urge you: completely forget everything you knew about OOP.**
 
