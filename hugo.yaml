@@ -6,7 +6,7 @@ paginate: 5
 
 enableRobotsTXT: true
 buildDrafts: false
-buildFuture: false
+buildFuture: true
 buildExpired: false
 
 minify:
@@ -17,10 +17,22 @@ params:
   mainSections: ["posts"]
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: BinTree
-  description: "Stas Yankovskiy blogging about software engineering, OOP, programming paradigms, automated testing."
-  keywords: ["Software Engineering", "Object-Oriented Programming", "OOP", "Programming Paradigms", "Automated Testing", "Software Development", "Clean Code", "Software Architecture", "Test-Driven Development", "TDD", "Tech Blog", "Stas Yankovskiy"]
+  description: "Stas Yankovskiy blogging about AI development methodologies, next-gen programming paradigms, and the future of software engineering."
+  keywords: [
+    "Software Engineering",
+    "AI-Native OOP",
+    "AI-Driven Development",
+    "Software Architecture",
+    "System Design",
+    "Programming Paradigms",
+    "Intent-Based Language",
+    "Message Passing",
+    "Future of Software",
+    "Stas Yankovskiy",
+    "Tech Blog"
+  ]
   author: Stas Yankovskiy
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: ["/images/og-image.jpg"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -73,7 +85,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "The computing blog by Stas Yankovskiy"
-    Content: The blog about software engineering, OOP and paradigms
+    Content: Software engineering for the AI era. Redefining OOP, universal system design, and programming paradigms.
 
   socialIcons:
     - name: github
