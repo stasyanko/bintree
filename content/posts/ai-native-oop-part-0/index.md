@@ -44,7 +44,15 @@ Especially today.
 
 In this series, I want to offer an alternative theory for OOP. It is simpler and easier to understand. 
 
-It throws away the extra details and leaves only two things that are older than programming itself: **black boxes** and **message passing** between them. This new theory is based on cybernetics and systems theory.
+In my first project — a classifieds board — I worked as a programmer; despite initial planning, the codebase eventually devolved into spaghetti code. 
+
+While I acknowledge that this was my first project, it was precisely what drove me to examine the underlying issues with OOP. I initially experimented with design patterns, but they offered only marginal improvements. 
+
+I then realized the root of the problem lay in the very foundation of OOP: whereas functional programming is grounded in mathematics, pure functions, and immutability, it is difficult to identify a comparable scientific basis for OOP.
+
+The MOBBLOC principles, introduced in this series of articles, address this, as they are rooted in cybernetics and systems theory.
+
+This new theory throws away the extra details and leaves only two things that are older than programming itself: **black boxes** and **message passing** between them. 
 
 ![Four Pillars Of OOP](four-pillars-oop.webp)
 
