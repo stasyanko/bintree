@@ -1,7 +1,7 @@
 ---
 title: "[AI-native OOP] Part 0: The Blueprint"
 date: 2026-10-12
-draft: false
+draft: true
 weight: 1
 series: 
   - "AI-native OOP"
