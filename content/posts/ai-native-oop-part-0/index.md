@@ -1,7 +1,7 @@
 ---
 title: "[AI-native OOP] Part 0: The Blueprint"
 date: 2026-10-12
-draft: true
+draft: false
 weight: 1
 series: 
   - "AI-native OOP"
@@ -36,73 +36,103 @@ cover:
   relative: true
 ---
 
-**Encapsulation. Polymorphism. Inheritance. Abstraction.** 
+I thought for a long time about how to start this series. I could make a loud statement like, "Forget everything you learned at university." 
 
-Forget about them. Seriously. 
+But let's be honest: encapsulation, polymorphism, inheritance, and abstraction are not "bad". They just aren't the most important things anymore.
+<!--more-->
+Especially today.
 
-In this series of articles, we will build a new, scientifically proven foundation for Object-Oriented Programming (OOP). <!--more--> It has almost nothing to do with the four old pillars that students have been memorizing in universities for decades.
+In this series, I want to offer an alternative theory for OOP. It is simpler and easier to understand. 
+
+It throws away the extra details and leaves only two things that are older than programming itself: **black boxes** and **message passing** between them. This new theory is based on cybernetics and systems theory.
 
 ![Four Pillars Of OOP](four-pillars-oop.webp)
 
-The new foundation of OOP is as simple as a children's building block set and as precise as math. It is based on just two things: **black boxes** and **message passing** between them.
+We won't just criticize old approaches (even though we have good reasons). Instead, we will build a new OOP theory step by step. 
 
-In this series, we won't just criticize the old way. We will announce a manifesto for a new approach and, step by step, create a new OOP theory. This theory will allow anyone — even people far from coding — to effectively design complex software systems.
+This will help us design systems in a way that is clear not just to senior developers, but to everyone involved in making the product.
 
-## The Problem: System Design is Broken
+## Where the process breaks down
 
-How is software built today? It is painful. 
+**Let's look at a real situation.** An analyst draws a business process diagram. 
 
-A manager draws a business process diagram. An analyst writes a huge technical specification. And a programmer turns all of this into messy code in Java, C++, or Python. In the end, the system does not look like the original idea, and maintaining it becomes a nightmare.
+It looks logical, and everyone is happy. Then, this diagram goes to a developer who tries to "force" it into Java, C#, or Python. 
 
-Why does this happen? Because **designing software systems is still a job for the chosen few**. To build an app, you must know syntax, loops, memory management, and outdated OOP principles that have no real scientific basis. 
+And then the pain begins. 
 
-The old four pillars of OOP force us to think about how objects are built inside, rather than how they interact with each other. They create a huge gap between how a human designs a system and how it looks in code. In the age of Artificial Intelligence, this gap is the main thing slowing us down.
+Beautiful arrows turn into spaghetti code. A "simple data exchange" gets covered in complex dependencies and hidden side effects. 
 
-## The Solution: Universal Principles and a Language for Everyone
-
-But what if there was a universal language for designing systems? 
-
-In this series, we offer not just a new language to describe and design systems, but also new Object-Oriented Programming principles. These principles will be useful and easy to understand for both programmers and people who help design systems but don't write code. 
+By the time of release, the code architecture barely looks like the original idea. Adding a new feature feels like changing a wheel on a moving car.
 
 ![Designing Programming System](designing-programming-system.webp)
 
-This includes analysts, managers, testers, as well as company leaders and department heads. 
+The root of the problem is simple. **Classic OOP, with its four pillars, focuses us on the inside of an object**. 
 
-The new OOP principles we present in this series do not depend on scale or level. This means they work exactly the same way at any level of complexity:
+We get stuck in the details and lose sight of the big picture. We think about how an object is *built*, not about how it ***communicates* with the outside world**.
 
-* Are you writing a low-level function in **C**? It is a black box receiving messages.
-* Are you designing business logic in **Java**? It is a network of black boxes.
-* Are you building a distributed system of **microservices**? It is the same black boxes communicating through messages.
+Before, this was just inconvenient. 
 
-The same extremely simple rules work everywhere. From a single line of code to a global architecture. 
+But in the age of generative AI, when software systems are designed not just by programmers, but also by managers, analysts, and even testers, this has become the main bottleneck.
 
-Based on these principles, we will create a **new system design language** in this series. 
+We need a new OOP theory: not just for AI, but first of all, for people. 
 
-## Why This Changes Everything
+A theory that is clear to anyone and, more importantly, based on science.
 
-This language will become a bridge between humans and machines. Here are its key features:
+The four "traditional" pillars of OOP do not have a scientific base.
 
-1. **It is understandable for everyone.** It is so simple and intuitive that a school student, manager, accountant, or designer can learn it. Anyone can use it to describe the architecture of a complex app without writing a single line of traditional code.
-2. **It works together with AI.** You describe *what* the system should do in this language (which boxes send which messages), and Artificial Intelligence instantly translates this blueprint into working, optimized code in Python, Java, C++, or any other language.
-3. **It is strictly verifiable (Killer Feature).** Despite being simple and easy for non-programmers, this language is strict enough. This means we can use **static analysis** to automatically check if the code generated by AI in a classic language matches our original simple blueprint. Fewer AI hallucinations, fewer differences between the spec and reality.
+We will fix this and formulate new principles for the foundation of OOP.
 
-## The Era of AI-Native OOP
+## A different point of view
 
-We are entering a time when low-level programming stops being the main skill. In the future, AI will write the code, and humans will design the systems. 
+The idea I am developing here is about changing our focus. 
 
-But for people to do this, they need the right tool. Old OOP is not good for this. The new OOP is perfect.
+We need a way to describe systems that does not depend on the syntax of a specific programming language.
 
-In the upcoming parts of this series, we will:
-* Explain why old OOP principles need to be replaced.
-* Reveal the scientific base for the new OOP theory using black boxes and messages.
-* Design and build our new system design language from scratch.
-* Show how to build apps using this language and AI.
+It is all based on black boxes. That's it. 
+* Are you writing a single function in C? It is a black box receiving messages.
+* Are you designing business logic in Java? It is a network of interacting black boxes.
+* Are you building a distributed cluster of microservices? They are the same boxes, just communicating over a network instead of through memory.
 
-These principles are already formulated. They are universal. They are simple. 
+The same simple rules work everywhere. From a single line of code to a large distributed system. 
 
-Welcome to the new era of design. Welcome to **AI-Native OOP**.
+## How does AI fit into this?
 
-## Series Map 
+With the arrival of AI, almost anyone can develop software today. We already see many games and apps created with just a few prompts. 
+
+But when designing large business applications, a problem appears: we need to express our requests to the AI more formally. 
+
+**Therefore, we need a stricter, yet simple, language for describing systems for non-technical people.** 
+
+The new theory in this series will be the foundation for such a language. 
+
+If we describe a system as a graph of black boxes with strict message rules between them, we greatly reduce the "search space" for the AI. 
+
+This approach allows the AI to *translate* the design directly into Python, Go, or Rust code with high accuracy. 
+
+But here is the most important part: because our design language is strict, we can write a parser or a static analyzer. 
+
+This tool can mathematically check: does the code generated by the AI really match our original diagram? 
+
+This is not magic. It is simply controlling changing requirements at the compilation level.
+
+## What is next?
+
+In the next parts, I will try to explain this clearly. Without "fluff" (or with a minimum of it).
+
+* We will look at why classic OOP principles have run their course and are more like a random set of rules than a complete system.
+* We will show the practical base of the black box approach (yes, it has a scientific basis, and I will link to it).
+* We will design the syntax of our new system design language from scratch.
+* We will see how this works with modern LLMs using real examples.
+
+Does this sound ambitious? Maybe. But the principles I will talk about already work in my pet projects and daily work tasks. 
+
+The new replacement for the four pillars of OOP is called **MOBBLOC**. 
+
+I won't explain what it means just yet; more details will come later in this series.
+
+Let's just try to look at familiar things from a different angle.
+
+## Article Series Map
 
 - [x] 🚀 Part 0. The Blueprint
 - [ ] 🎯 Part 1. The True Essence of OOP: Black Boxes and Message Passing
