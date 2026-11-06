@@ -144,8 +144,8 @@ Let's just try to look at familiar things from a different angle.
 
 - [x] 🚀 Part 0. The Blueprint
 - [ ] 🎯 Part 1. The True Essence of OOP: Black Boxes and Message Passing
-- [ ] 🧩 Part 2. Objects, Components, Messages
-- [ ] ️🧱 Part 3. The MOBBLOC Principles
+- [ ] ️🧱 Part 2. The MOBBLOC Principles
+- [ ] 🧩 Part 3. Objects, Components, Messages
 - [ ] 🛠️ Part 4. Creating the Concept Of AI-Native OOP Language From Scratch
 - [ ] 📋 Part 5. The Four Types Of OOP
 - [ ] 🐹 Part 6. Choosing The Mascot For MOBBLOC Principles
