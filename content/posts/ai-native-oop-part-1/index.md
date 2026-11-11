@@ -34,6 +34,7 @@ UseHugoToc: true
 cover:
   image: cover.webp
   relative: true
+slug: "ai-native-oop-part-1-cybernetics"
 ---
 
 As many know, the first object-oriented language was Simula. Its goal was to model real systems: assembly lines, transport networks, and banks. Kristen Nygaard and Ole-Johan Dahl created this language in the late 1960s exactly for this purpose.
