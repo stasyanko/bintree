@@ -40,3 +40,8 @@ body .profile,
 .profile ~ .post-entry {
     margin-top: 10px !important;
 }
+
+figure img {
+  max-width: 100%;
+  height: auto;
+}

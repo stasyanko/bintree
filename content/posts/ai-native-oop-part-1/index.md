@@ -1,11 +1,11 @@
 ---
 title: "[AI-native OOP] Part 1: The True Essence of OOP: Black Boxes and Message Passing"
 date: 2026-11-10
-draft: true
-weight: 1
+draft: false
+weight: 10
 series: 
   - "AI-native OOP"
-description: "Forget the four pillars. A new, scientifically grounded OOP based on black boxes and messages — universal, simple, and built for the AI era."
+description: "Let's understand how OOP was developed and what its main principle actually is. Also, we will find out what the main purpose of OOP and what science should stand behind that."
 tags:
   - OOP
   - AI-Native
@@ -36,10 +36,6 @@ cover:
   relative: true
 ---
 
-🗺 **Article Series: AI-native OOP**
-You are reading: **Part 1. The True Essence of OOP: Black Boxes and Message Passing**
-Part 2. MOBBLOC principles - The New Foundation Of OOP
-
 As many know, the first object-oriented language was Simula. Its goal was to model real systems: assembly lines, transport networks, and banks. Kristen Nygaard and Ole-Johan Dahl created this language in the late 1960s exactly for this purpose.
 
 Today, people often criticize object-oriented programming for too many abstractions. These include bloated class hierarchies and the inheritance mechanism, which breaks systems when changes happen.
@@ -52,11 +48,13 @@ What is the foundation of OOP? You will hardly find a textbook or book that give
 
 Therefore, we do not have a **unique scientific base** for object-oriented programming. This is especially true since we use it to build complex systems.
 
-In this article series, we will reinvent object-oriented programming from scratch. This is probably the best way to fix what is broken or works poorly.
+In this article series, we will **reinvent object-oriented programming** from scratch. This is probably the best way to fix what is broken or works poorly.
 
 The builders of Gothic cathedrals created complex and stable structures long before the science of material strength existed.
 
 They used craft rules, intuition, and experience, and it worked. The invention of material strength science did not mean the cathedrals were built wrong. It just explained why they stood for centuries and allowed us to build more safely.
+
+{{< figure src="images/02-cathedral-and-science.webp" alt="Hand-drawn architect's sketch on graph paper: a long Gothic nave in structural section with repeating pointed arches and flying buttresses, a blue thrust line with arrowheads running through the vaults down into the foundations, a compass and rule lying beside it" caption="Cathedrals stood for centuries before the science of material strength existed. The science did not make them wrong — it explained why they stand." loading="lazy" >}}
 
 The situation with OOP is similar. It is a powerful practice that developed for a long time **without a single scientific foundation**. I am not talking about the four "pillars" of OOP. They are not a scientific foundation.
 
@@ -80,6 +78,8 @@ We have a task: to model a complex system. Let it be a toy factory. We have work
 
 How would we build such a system if we did not have ready templates like "classes" and "inheritance"? How would we separate the components? How would they interact?
 
+{{< figure src="images/03-toy-factory.webp" alt="Hand-drawn architect's sketch on graph paper: a roofless cutaway model of a toy factory with five separate department blocks — supply, warehouse, production, assembly and sales — linked by blue route arrows across the gaps between them" caption="The toy factory before any code: five separate volumes, and the routes between them. The gaps are the design." loading="lazy" >}}
+
 ## Which science to use as a foundation?
 
 Before we model the toy factory as a program, we need to choose a foundation. What should we build on? Which discipline should be the base of our approach to designing complex systems?
@@ -98,6 +98,8 @@ To choose, let us agree on the rules. Any science that wants to be the foundatio
 4. **Distinctiveness**: Does it separate our paradigm from others? If the same foundation works for functional and logic programming, it is not a foundation for OOP. It is just general math.
 
 Let us test each candidate against these four questions.
+
+{{< figure src="images/04-three-candidate-sciences.webp" alt="Hand-drawn architect's sketch on graph paper: three stone plinths in a row carrying a branching organism, a wire node-and-edge graph, and a sealed box with input, output and a blue feedback loop; only the third plinth stands on a blue plane" caption="Three candidates on three plinths: systems theory, graph theory, cybernetics. Only the third one is about control and communication." loading="lazy" >}}
 
 ### First candidate: General Systems Theory
 
@@ -130,6 +132,8 @@ A graph fixes the structure but stays blind to behavior. It answers the question
 Against this background, it becomes clear why we must choose the third discipline. From the very start, it focused exactly on *control* and *communication*. It treats them not as side effects, but as the core of any organized system.
 
 Cybernetics is the science of control, communication, and information processing in complex systems. Its basic principles are the **black box** and **message passing**.
+
+{{< figure src="images/01-black-boxes-and-messages.webp" alt="Hand-drawn architect's sketch on graph paper: seven sealed opaque boxes of different sizes on a blue perspective grid, connected by blue arrows carrying small envelope-shaped message tokens" caption="A system is a set of black boxes exchanging messages. Nothing else is visible from the outside — and nothing else needs to be." loading="lazy" >}}
 
 Let us check the criteria:
 
@@ -168,6 +172,8 @@ His book "Cybernetics: Or Control and Communication in the Animal and the Machin
 
 The main idea of cybernetics is this: to understand a complex system, you do not need to know what is inside. You only need to observe how it reacts to external inputs and what it outputs. This is the "black box" principle.
 
+{{< figure src="images/05-black-box-anatomy.webp" alt="Hand-drawn architect's sketch on graph paper: a wide sealed cross-hatched box with a dial gauge on top, an incoming stimulus arrow, an outgoing response arrow and a blue feedback loop returning along the ground, inside a dashed blue boundary" caption="The anatomy of a black box: stimulus in, response out, feedback around, state inside. The boundary is the protocol, not the fields." loading="lazy" >}}
+
 ### Why cybernetics is the foundation of OOP
 
 Because object-oriented programming solves the same problem as cybernetics: how to design a stable system from many components that interact with each other.
@@ -187,6 +193,8 @@ We can model the departments of our toy factory as black boxes. Each department 
 Now imagine the warehouse. It is also a black box. It receives a message from the supply department: "Materials are delivered." The warehouse decides itself how to place them, which cell to use, and how to update the records. Then it sends a message to the production department: "Materials are available for use."
 
 The production department is another black box. It receives a message: "You can start producing a batch of 50 toys." Inside, it plans the schedule, assigns tasks to workers, and controls quality. Then it sends a message to the sales department: "The batch is ready for shipment."
+
+{{< figure src="images/06-departments-message-chain.webp" alt="Hand-drawn architect's sketch on graph paper: four sealed box-buildings in a row — supply dock, warehouse, production hall and sales counter — with blue arrows and envelope tokens passing between them" caption="Supply → warehouse → production → sales. Each building is sealed; only the envelopes cross the gaps." loading="lazy" >}}
 
 ### Why this works
 
@@ -256,6 +264,8 @@ From my own practice, the biggest problem with inheritance is this: if we change
 
 > Many real and virtual systems (like social networks or microservices) are better described as graphs, not strict trees, because entities in them often interact with many other entities.
 
+{{< figure src="images/07-inheritance-tree-vs-graph.webp" alt="Hand-drawn architect's sketch on graph paper: on the left a brittle three-level hierarchy of blocks with a crack through the parent and children slipping out of line; on the right a stable blue mesh of nine equal sealed cubes" caption="Change the parent — and the whole tree slips. The mesh on the right has no parent to break." loading="lazy" >}}
+
 For example, social networks, the World Wide Web, the brain, and neural networks are graphs.
 
 Trees are a special case of a graph, but real and virtual systems are rarely built exactly as trees.
@@ -324,6 +334,8 @@ This simple example shows that at least two of the four properties contradict ea
 
 Encapsulation says "hide fields" (make them `private`), but inheritance requires opening them (`protected`) so child classes can work. One principle says close, the other says open.
 
+{{< figure src="images/08-four-pillars-not-a-system.webp" alt="Hand-drawn architect's sketch on graph paper: a squat temple portico with four separate columns, one sealed and one with a doorway cut into it, a blue fracture running between them and the entablature broken into disconnected pieces" caption="Four columns that do not hold one roof. Encapsulation says “close”, inheritance says “open” — and the fracture runs right between them." loading="lazy" >}}
+
 > Important note: when we formulate new principles for OOP, we do not ban the use of any of the four traditional pillars, including inheritance. The role of each of these four mechanisms will be clarified in the next article and will become part of broader new principles.
 
 > When we define the foundation of any paradigm, we must choose the most general principles. Encapsulation, polymorphism, inheritance, and abstraction are specific engineering tools derived from practice and from languages like C++, Java, and Simula. They are not the most general and abstract principles. They are specific programming tools. The new foundation of OOP, which we will formulate in the next article, represents more general scientific principles. The four pillars of OOP are implementations of these principles. There are more such implementations. For example, the famous "composition over inheritance" principle is one way to implement a black box using composition instead of inheritance.
@@ -358,7 +370,7 @@ Before we define the main principle of OOP, we need to understand what approache
 
 When the first object-oriented language, Simula, appeared, one of its key ideas was inheritance and object hierarchy. But with the Smalltalk language, the world saw a new view of OOP: message passing between objects.
 
-==🟢// Here is an image with a timeline, showing symbols, as well as hierarchy and inheritance. Then a slow discussion follows. We need to show where OOP took the wrong turn, specifically the moment from Grady Booch's book where the four pillars were formulated, relying mostly on the Simula language. //==
+{{< figure src="images/09-two-paths-simula-smalltalk.webp" alt="Hand-drawn architect's sketch on graph paper: a road forking at a signpost, the left branch leading to a rigid pyramid of blocks labelled Simula, the right branch leading to a blue colony of cells exchanging envelope messages labelled Smalltalk, a pencil timeline strip below" caption="The fork: Simula's hierarchy on the left, Smalltalk's messaging on the right. The industry paved the left road — and the four pillars were cast from it." loading="lazy" >}}
 
 We can say these are two different philosophical paths that accidentally got the same name:
 
@@ -393,6 +405,8 @@ A microservice is exactly a black box that communicates with messages.
 If you think in these terms from the start, you do not need to "transition" from a monolith to microservices. You just scale up the same model.
 
 One object, ten objects, a hundred objects—the principle is the same. But if you think in hierarchies, everything breaks when you move to microservices, because inheritance does not work over a network.
+
+{{< figure src="images/10-one-ten-hundred-boxes.webp" alt="Hand-drawn architect's sketch on graph paper: the same sealed cube repeated at three scales — one large cube, ten medium cubes, and a hundred tiny cubes — all joined by blue message lines on one blue ground grid, labelled 1, 10, 100" caption="One box, ten boxes, a hundred boxes. A microservice is the same black box — you scale the model, you do not rewrite it." loading="lazy" >}}
 
 > If we put message passing between black boxes at the center of OOP, we already think at the paradigm level about how system components interact with each other, not what hierarchy they are in.
 

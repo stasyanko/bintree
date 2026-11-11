@@ -1,0 +1,33 @@
+{{- $src := .Get "src" -}}
+{{- $img := .Page.Resources.Get $src -}}
+{{- if not $img -}}
+  {{- $img = resources.Get (strings.TrimPrefix "/" $src) -}}
+{{- end -}}
+
+{{- $width := .Get "width" -}}
+{{- $height := .Get "height" -}}
+
+{{- if $img -}}
+  {{- $src = $img.RelPermalink -}}
+  {{- if and (not $width) (not $height) -}}
+    {{- $width = $img.Width -}}
+    {{- $height = $img.Height -}}
+  {{- end -}}
+{{- else if $src -}}
+  {{- $src = $src | relURL -}}
+{{- end -}}
+
+<figure{{ with .Get "class" }} class="{{ . }}"{{ end }}>
+  <img src="{{ $src }}"
+       {{- with .Get "alt" }} alt="{{ . }}"{{ end -}}
+       {{- with $width }} width="{{ . }}"{{ end -}}
+       {{- with $height }} height="{{ . }}"{{ end -}}
+       {{- with .Get "loading" }} loading="{{ . }}"{{ end -}}
+  />
+  {{- if or (.Get "title") (.Get "caption") -}}
+    <figcaption>
+      {{- with .Get "title" }}<h4>{{ . }}</h4>{{ end -}}
+      {{- with .Get "caption" }}<p>{{ . | markdownify }}</p>{{ end -}}
+    </figcaption>
+  {{- end -}}
+</figure>

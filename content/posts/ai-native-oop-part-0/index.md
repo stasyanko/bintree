@@ -143,7 +143,7 @@ Let's just try to look at familiar things from a different angle.
 ## Article Series Map
 
 - [x] 🚀 Part 0. The Blueprint
-- [ ] 🎯 Part 1. The True Essence of OOP: Black Boxes and Message Passing
+- [x] 🎯 [Part 1. The True Essence of OOP: Black Boxes and Message Passing]({{< relref "/posts/ai-native-oop-part-1" >}})
 - [ ] ️🧱 Part 2. The MOBBLOC Principles
 - [ ] 🧩 Part 3. Objects, Components, Messages
 - [ ] 🛠️ Part 4. Creating the Concept Of AI-Native OOP Language From Scratch
