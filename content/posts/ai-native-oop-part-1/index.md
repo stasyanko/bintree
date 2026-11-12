@@ -39,15 +39,17 @@ slug: "ai-native-oop-part-1-black-boxes"
 
 As many know, the first object-oriented language was Simula. Its goal was to model real systems: assembly lines, transport networks, and banks. Kristen Nygaard and Ole-Johan Dahl created this language in the late 1960s exactly for this purpose.
 
-Today, people often criticize object-oriented programming for too many abstractions. These include bloated class hierarchies and the inheritance mechanism, which breaks systems when changes happen.
+Today, people often criticize object-oriented programming for too many abstractions. These include bloated class hierarchies and the inheritance mechanism, which can break systems when changes happen.
 
-But the main problem with OOP is that there is **no single, widely accepted, and complete theory** to explain it.
+Functional programming came out of the lambda calculus. Relational databases came out of Codd's relational algebra. Both started as mathematics and grew languages and engines on top of it.
 
-Functional programming is based on mathematics: pure functions, higher-order functions, and immutability. This is a strict foundation.
+OOP grew in the opposite direction. It started as an engineering practice for simulating complex systems, and it still has **no single, widely accepted scientific foundation**. 
 
-What is the foundation of OOP? You will hardly find a textbook or book that gives a clear and complete answer to this question.
+What it has is a patchwork of theories, where each model covers its own aspect of the paradigm: type theory and Abadi and Cardelli's object calculi account for polymorphism and inheritance, coalgebra formalizes encapsulation and observable behavior, and the actor model describes message passing.
 
-Therefore, we do not have a **unique scientific base** for object-oriented programming. This is especially true since we use it to build complex systems.
+Each fragment is rigorous. None of them is the foundation, and together they do not add up to one. 
+
+What is missing is the conceptual frame that ties them together — a frame that would tell an engineer where to draw the boundaries of a component and how to design the traffic between components.
 
 In this article series, we will **reinvent object-oriented programming** from scratch. This is probably the best way to fix what is broken or works poorly.
 
@@ -57,7 +59,7 @@ They used craft rules, intuition, and experience, and it worked. The invention o
 
 {{< figure src="images/02-cathedral-and-science.webp" alt="Section through a Gothic nave, with a line tracing the thrust of the vaults down into the foundations." caption="The cathedrals stood for centuries before anyone could calculate why." loading="lazy" >}}
 
-The situation with OOP is similar. It is a powerful practice that developed for a long time **without a single scientific foundation**. I am not talking about the four "pillars" of OOP. They are not a scientific foundation.
+The situation with OOP is similar. It is a powerful practice that developed for a long time **without a single scientific foundation**. I am not talking about the four "pillars" of OOP. They are not a scientific foundation, but sooner engineering practices and programming mechanisms for particular languages.
 
 The question is: which science should be the foundation of OOP to give it a reliable base? There is no single opinion on this yet, and popular OOP books rarely mention it.
 
