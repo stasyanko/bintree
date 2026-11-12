@@ -55,7 +55,7 @@ The builders of Gothic cathedrals created complex and stable structures long bef
 
 They used craft rules, intuition, and experience, and it worked. The invention of material strength science did not mean the cathedrals were built wrong. It just explained why they stood for centuries and allowed us to build more safely.
 
-{{< figure src="images/02-cathedral-and-science.webp" alt="Hand-drawn architect's sketch on graph paper: a long Gothic nave in structural section with repeating pointed arches and flying buttresses, a blue thrust line with arrowheads running through the vaults down into the foundations, a compass and rule lying beside it" caption="Cathedrals stood for centuries before the science of material strength existed. The science did not make them wrong — it explained why they stand." loading="lazy" >}}
+{{< figure src="images/02-cathedral-and-science.webp" alt="Section through a Gothic nave, with a line tracing the thrust of the vaults down into the foundations." caption="The cathedrals stood for centuries before anyone could calculate why." loading="lazy" >}}
 
 The situation with OOP is similar. It is a powerful practice that developed for a long time **without a single scientific foundation**. I am not talking about the four "pillars" of OOP. They are not a scientific foundation.
 
@@ -79,7 +79,7 @@ We have a task: to model a complex system. Let it be a toy factory. We have work
 
 How would we build such a system if we did not have ready templates like "classes" and "inheritance"? How would we separate the components? How would they interact?
 
-{{< figure src="images/03-toy-factory.webp" alt="Hand-drawn architect's sketch on graph paper: a roofless cutaway model of a toy factory with five separate department blocks — supply, warehouse, production, assembly and sales — linked by blue route arrows across the gaps between them" caption="The toy factory before any code: five separate volumes, and the routes between them. The gaps are the design." loading="lazy" >}}
+{{< figure src="images/03-toy-factory.webp" alt="Cutaway of a toy factory: five separate department buildings with routes drawn between them." caption="Five departments and the routes between them. The gaps matter as much as the blocks." loading="lazy" >}}
 
 ## Which science to use as a foundation?
 
@@ -100,7 +100,7 @@ To choose, let us agree on the rules. Any science that wants to be the foundatio
 
 Let us test each candidate against these four questions.
 
-{{< figure src="images/04-three-candidate-sciences.webp" alt="Hand-drawn architect's sketch on graph paper: three stone plinths in a row carrying a branching organism, a wire node-and-edge graph, and a sealed box with input, output and a blue feedback loop; only the third plinth stands on a blue plane" caption="Three candidates on three plinths: systems theory, graph theory, cybernetics. Only the third one is about control and communication." loading="lazy" >}}
+{{< figure src="images/04-three-candidate-sciences.webp" alt="Three plinths carrying a branching organism, a node-and-edge graph, and a sealed box with a feedback loop." caption="Systems theory, graph theory, cybernetics. Only the third is about control and communication." loading="lazy" >}}
 
 ### First candidate: General Systems Theory
 
@@ -134,7 +134,7 @@ Against this background, it becomes clear why we must choose the third disciplin
 
 Cybernetics is the science of control, communication, and information processing in complex systems. Its basic principles are the **black box** and **message passing**.
 
-{{< figure src="images/01-black-boxes-and-messages.webp" alt="Hand-drawn architect's sketch on graph paper: seven sealed opaque boxes of different sizes on a blue perspective grid, connected by blue arrows carrying small envelope-shaped message tokens" caption="A system is a set of black boxes exchanging messages. Nothing else is visible from the outside — and nothing else needs to be." loading="lazy" >}}
+{{< figure src="images/01-black-boxes-and-messages.webp" alt="Seven sealed boxes of different sizes, joined by arrows that carry small message tokens." caption="A system is black boxes exchanging messages. From the outside, that is all there is to see." loading="lazy" >}}
 
 Let us check the criteria:
 
@@ -173,7 +173,7 @@ His book "Cybernetics: Or Control and Communication in the Animal and the Machin
 
 The main idea of cybernetics is this: to understand a complex system, you do not need to know what is inside. You only need to observe how it reacts to external inputs and what it outputs. This is the "black box" principle.
 
-{{< figure src="images/05-black-box-anatomy.webp" alt="Hand-drawn architect's sketch on graph paper: a wide sealed cross-hatched box with a dial gauge on top, an incoming stimulus arrow, an outgoing response arrow and a blue feedback loop returning along the ground, inside a dashed blue boundary" caption="The anatomy of a black box: stimulus in, response out, feedback around, state inside. The boundary is the protocol, not the fields." loading="lazy" >}}
+{{< figure src="images/05-black-box-anatomy.webp" alt="One sealed box with a stimulus arrow going in, a response arrow coming out, and a feedback loop returning underneath." caption="Stimulus in, response out, feedback around, state inside. The boundary is the protocol, not the field list." loading="lazy" >}}
 
 ### Why cybernetics is the foundation of OOP
 
@@ -195,7 +195,7 @@ Now imagine the warehouse. It is also a black box. It receives a message from th
 
 The production department is another black box. It receives a message: "You can start producing a batch of 50 toys." Inside, it plans the schedule, assigns tasks to workers, and controls quality. Then it sends a message to the sales department: "The batch is ready for shipment."
 
-{{< figure src="images/06-departments-message-chain.webp" alt="Hand-drawn architect's sketch on graph paper: four sealed box-buildings in a row — supply dock, warehouse, production hall and sales counter — with blue arrows and envelope tokens passing between them" caption="Supply → warehouse → production → sales. Each building is sealed; only the envelopes cross the gaps." loading="lazy" >}}
+{{< figure src="images/06-departments-message-chain.webp" alt="Supply, warehouse, production and sales drawn as four sealed buildings, with messages passing along the chain." caption="Only the envelopes cross the gaps. Nothing inside a building is visible to the next one." loading="lazy" >}}
 
 ### Why this works
 
@@ -265,7 +265,7 @@ From my own practice, the biggest problem with inheritance is this: if we change
 
 > Many real and virtual systems (like social networks or microservices) are better described as graphs, not strict trees, because entities in them often interact with many other entities.
 
-{{< figure src="images/07-inheritance-tree-vs-graph.webp" alt="Hand-drawn architect's sketch on graph paper: on the left a brittle three-level hierarchy of blocks with a crack through the parent and children slipping out of line; on the right a stable blue mesh of nine equal sealed cubes" caption="Change the parent — and the whole tree slips. The mesh on the right has no parent to break." loading="lazy" >}}
+{{< figure src="images/07-inheritance-tree-vs-graph.webp" alt="A cracked three-level hierarchy of blocks on the left; an even mesh of nine identical cubes on the right." caption="Change the parent and the tree shifts. The mesh has no parent to break." loading="lazy" >}}
 
 For example, social networks, the World Wide Web, the brain, and neural networks are graphs.
 
@@ -335,7 +335,7 @@ This simple example shows that at least two of the four properties contradict ea
 
 Encapsulation says "hide fields" (make them `private`), but inheritance requires opening them (`protected`) so child classes can work. One principle says close, the other says open.
 
-{{< figure src="images/08-four-pillars-not-a-system.webp" alt="Hand-drawn architect's sketch on graph paper: a squat temple portico with four separate columns, one sealed and one with a doorway cut into it, a blue fracture running between them and the entablature broken into disconnected pieces" caption="Four columns that do not hold one roof. Encapsulation says “close”, inheritance says “open” — and the fracture runs right between them." loading="lazy" >}}
+{{< figure src="images/08-four-pillars-not-a-system.webp" alt="A portico with four columns and a broken entablature; a fracture runs between two of the columns." caption="Encapsulation says close, inheritance says open. The fracture runs between them." loading="lazy" >}}
 
 > Important note: when we formulate new principles for OOP, we do not ban the use of any of the four traditional pillars, including inheritance. The role of each of these four mechanisms will be clarified in the next article and will become part of broader new principles.
 
@@ -371,7 +371,7 @@ Before we define the main principle of OOP, we need to understand what approache
 
 When the first object-oriented language, Simula, appeared, one of its key ideas was inheritance and object hierarchy. But with the Smalltalk language, the world saw a new view of OOP: message passing between objects.
 
-{{< figure src="images/09-two-paths-simula-smalltalk.webp" alt="Hand-drawn architect's sketch on graph paper: a road forking at a signpost, the left branch leading to a rigid pyramid of blocks labelled Simula, the right branch leading to a blue colony of cells exchanging envelope messages labelled Smalltalk, a pencil timeline strip below" caption="The fork: Simula's hierarchy on the left, Smalltalk's messaging on the right. The industry paved the left road — and the four pillars were cast from it." loading="lazy" >}}
+{{< figure src="images/09-two-paths-simula-smalltalk.webp" alt="A fork in a road: one branch leads to a pyramid of blocks marked Simula, the other to cells exchanging messages marked Smalltalk." caption="The industry paved the left branch, and cast the four pillars from it." loading="lazy" >}}
 
 We can say these are two different philosophical paths that accidentally got the same name:
 
@@ -407,7 +407,7 @@ If you think in these terms from the start, you do not need to "transition" from
 
 One object, ten objects, a hundred objects—the principle is the same. But if you think in hierarchies, everything breaks when you move to microservices, because inheritance does not work over a network.
 
-{{< figure src="images/10-one-ten-hundred-boxes.webp" alt="Hand-drawn architect's sketch on graph paper: the same sealed cube repeated at three scales — one large cube, ten medium cubes, and a hundred tiny cubes — all joined by blue message lines on one blue ground grid, labelled 1, 10, 100" caption="One box, ten boxes, a hundred boxes. A microservice is the same black box — you scale the model, you do not rewrite it." loading="lazy" >}}
+{{< figure src="images/10-one-ten-hundred-boxes.webp" alt="The same cube drawn at three scales, labeled 1, 10, and 100, each set joined by message lines." caption="A microservice is the same black box. You scale the model; you don't rewrite it." loading="lazy" >}}
 
 > If we put message passing between black boxes at the center of OOP, we already think at the paradigm level about how system components interact with each other, not what hierarchy they are in.
 
