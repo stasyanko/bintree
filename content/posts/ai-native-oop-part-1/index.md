@@ -55,9 +55,11 @@ What is missing is the conceptual frame that ties them together — a frame that
 
 In this article series, we will **reinvent object-oriented programming** from scratch. This is probably the best way to fix what is broken or works poorly.
 
-The builders of Gothic cathedrals created complex and stable structures long before the science of material strength existed.
+The builders of Gothic cathedrals created complex and stable structures long before structural mechanics existed.
 
-They used craft rules, intuition, and experience, and it worked. The invention of material strength science did not mean the cathedrals were built wrong. It just explained why they stood for centuries and allowed us to build more safely.
+They used craft rules, intuition, and experience, and it worked. 
+
+Structural mechanics didn’t prove the old cathedrals wrong. It just explained why they stood and how to build safer ones.
 
 {{< figure src="images/02-cathedral-and-science.webp" alt="Section through a Gothic nave, with a line tracing the thrust of the vaults down into the foundations." caption="The cathedrals stood for centuries before anyone could calculate why." loading="lazy" >}}
 
@@ -77,9 +79,9 @@ So, let us try to invent OOP from scratch.
 
 ## Inventing OOP from scratch
 
-Imagine that object-oriented programming does not exist. It is simply not there. No one has invented it yet.
+Imagine that object-oriented programming does not exist. It hasn’t been invented yet. No one has invented it yet.
 
-We have a task: to model a complex system. Let it be a toy factory. We have workshops, assembly lines, warehouses, and supply and sales departments. All of these parts interact with each other.
+We have a task: to model a complex system. Suppose it’s a toy factory. We have workshops, assembly lines, warehouses, and supply and sales departments. All of these parts interact with each other.
 
 How would we build such a system if we did not have ready templates like "classes" and "inheritance"? How would we separate the components? How would they interact?
 
@@ -311,7 +313,7 @@ A small spoiler: this is indeed one of the core principles of OOP. But polymorph
 
 ## Encapsulation — our last hope
 
-Encapsulation is truly the principle that separates OOP from other paradigms. Procedural programming also abstracts. Functional programming also abstracts. But only the object approach says: "here is a boundary you cannot cross." This is the essence: hide the internals, leave only the contract. But here is what is interesting. When we say "encapsulation", we usually think about private fields and getters.
+Encapsulation is truly the principle that separates OOP from other paradigms. Procedural programming also abstracts. Functional programming also abstracts. But only the object approach says: "here is a boundary you cannot cross." This is the essence: hide the internals, leave only the contract. Here’s the catch: when we say "encapsulation", we usually think about private fields and getters.
 
 This is only a surface sign of something deeper. Next, we will look at OOP from a different scientific view. We will not look through classes and hierarchies, but through how objects interact at all.
 
@@ -369,7 +371,7 @@ In the past, some people believed the Earth was flat. To fully prove the Earth i
 
 Now we can also rise high above the accumulated experience in programming and computer science to formulate a new approach to object-oriented programming.
 
-But, as said at the beginning, we must not only consider all past experience to formulate a new foundation. We must also give a scientific foundation to the OOP paradigm, which we will do next.
+But, as noted at the beginning, we must not only consider all past experience to formulate a new foundation. We must also give a scientific foundation to the OOP paradigm, which we will do next.
 
 ## The main principle of OOP
 
@@ -390,11 +392,11 @@ In the end, our industry chose Simula and hierarchy with inheritance as the foun
 
 The problem is that the **four pillars, which do not form a connected system** and sometimes contradict each other, lie at the very foundation. This is a big problem.
 
-Another problem is this: if inheritance is an essential part of OOP, we view all systems through hierarchy. But as said before, system parts are rarely built in a hierarchy. Usually, systems form a random graph, not a tree with a strict hierarchy.
+Another problem is this: if inheritance is an essential part of OOP, we view all systems through hierarchy. But as I mentioned earlier, system parts are rarely built in a hierarchy. Usually, systems form a random graph, not a tree with a strict hierarchy.
 
 > Usually, systems form a random graph, not a tree with a strict hierarchy.
 
-But it is important that the foundation of OOP strongly influences software system design. This is our starting point. If we start from the four pillars, we do not get a complete system of principles.
+What matters is that the foundation of OOP strongly influences software system design. This is our starting point. If we start from the four pillars, we do not get a complete system of principles.
 
 Message passing between black boxes is a complete system of principles. First, it is easy to keep in mind and easy to visualize. Even a three-year-old child can understand black boxes sending messages to each other. This also strongly influences system design.
 
@@ -502,7 +504,7 @@ Why is the article series called **AI-native OOP**?
 
 Regarding artificial intelligence, we are presenting a simple set of principles for designing complex systems to the whole IT community. These principles will be clear not only to programmers, but also to analysts, testers, and managers.
 
-Because of this, all of them can take part in designing complex systems. Today, with the help of artificial intelligence, not only programmers can write code. At least, almost anyone can create prototypes of software systems.
+Because of this, all of them can take part in designing complex systems. Today, thanks to AI, not only programmers can write code. At least, almost anyone can create prototypes of software systems.
 
 Systems thinking, along with the ability to design and understand complex systems, is a skill of the 21st century. It is a skill of the AI era, because today AI already knows how to program quite well and build the systems humans describe.
 
@@ -510,7 +512,7 @@ Systems thinking, along with the ability to design and understand complex system
 
 We are left with system design in general, especially in business and enterprise applications. The new principles of object-oriented programming, formulated in the next article based on black boxes and message passing (that is, cybernetics), will help with this.
 
-In my view, cybernetics is more relevant today than ever as a science of complex systems. At the same time, it gives simple and clear tools for this. These tools will be clear to anyone, including non-technical specialists like managers, accountants, economists, systems analysts, and CEOs.
+In my experience, cybernetics is more relevant today than ever as a science of complex systems. At the same time, it gives simple and clear tools for this. These tools will be clear to anyone, including non-technical specialists like managers, accountants, economists, systems analysts, and CEOs.
 
 ## Conclusion
 
