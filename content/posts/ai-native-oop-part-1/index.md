@@ -231,6 +231,8 @@ And this is why cybernetics, with its principle of black boxes and messages, is 
 
 > So, from here on, we accept this as a postulate: **the main goal of OOP is designing, building, and growing complex systems**. We will use this postulate to formulate the new scientific foundation of OOP.
 
+{{< figure src="images/16-goal-design-build-grow.webp" width="1600" height="900" alt="Three stages of the same campus: a flat plan, blocks under scaffolding, then a larger campus with new wings." caption="Design, build, grow. The model does not change as the system gets bigger." loading="lazy" >}}
+
 Now let us look at how the four pillars of OOP appeared and why they cannot serve as its foundation.
 
 ## The rise and fall of the four pillars of OOP
@@ -447,6 +449,8 @@ When we take cybernetics as a foundation, we do not just say "hide fields". We s
 - The system stays stable because changing the internal implementation of an object does not break those who interact with it (as long as the protocol is kept).
 
 **Encapsulation is a result of the cybernetic approach, not its essence.**
+
+{{< figure src="images/17-encapsulation-is-a-result.webp" width="1600" height="900" alt="A sealed block with messages at its ports, an arrow, then a smaller block with a plain padlock." caption="The lock arrives on its own. Start from the lock and all you get is locked data." loading="lazy" >}}
 
 When you design an object as a "black box" (according to cybernetics), encapsulation happens automatically. You simply cannot open the internals because the object is an autonomous unit, not a data set with methods.
 
