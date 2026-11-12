@@ -51,6 +51,8 @@ Each fragment is rigorous. None of them is the foundation, and together they do 
 
 What is missing is the conceptual frame that ties them together — a frame that would tell an engineer where to draw the boundaries of a component and how to design the traffic between components.
 
+{{< figure src="images/11-foundation-patchwork.webp" width="1600" height="900" alt="Two pavilions: one on a solid slab, one on patched blocks. Beside them, an empty dashed frame." caption="One foundation is a single slab. The other is a patchwork, and nothing holds it together." loading="lazy" >}}
+
 In this article series, we will **reinvent object-oriented programming** from scratch. This is probably the best way to fix what is broken or works poorly.
 
 The builders of Gothic cathedrals created complex and stable structures long before the science of material strength existed.
@@ -301,6 +303,8 @@ When we formulate the fundamental principles of a paradigm, we must find the exa
 
 Polymorphism is when different objects answer the same call in different ways. A circle object calculates area using the radius. A rectangle object uses the sides. A composite figure adds the areas of all its parts. The call is the same, but the behavior is different.
 
+{{< figure src="images/12-polymorphism-same-message.webp" width="1600" height="900" alt="Three boxes marked circle, rectangle and composite shape get the same message and return different answers." caption="The message is identical. What makes it identical for all three is the real question." loading="lazy" >}}
+
 A small spoiler: this is indeed one of the core principles of OOP. But polymorphism is only a small part of something bigger and more important. Polymorphism itself does not answer *why* different objects can answer the same call at all, and *what* makes this call "the same" for all of them. The answer to this question is the true foundation of the object approach, and we will get to it soon.
 
 ## Encapsulation — our last hope
@@ -466,6 +470,8 @@ To understand how this works in practice, let us imagine a normal **coffee machi
 
 In cybernetics, a coffee machine is an ideal **"black box"**. When you want coffee, you do not open its back cover to personally check the water level, manually pour beans into the grinder, or turn on the heating element. It is much simpler: you send the machine a **message** (you press the "Cappuccino" button) and provide a resource (a coin or a card).
 
+{{< figure src="images/13-coffee-machine-black-box.webp" width="1600" height="900" alt="A sealed coffee machine: message and coin in, a cup or an Add water card out." caption="You never open the back panel. You send a message and read the reply." loading="lazy" >}}
+
 Then the magic of cybernetics happens: the machine *itself* decides how to process this message. It checks the milk level, heats the water to the right temperature, and whips the foam. You do not need to know how its internal mechanism works. You only care about the result: it either gives you a cup of coffee (a successful answer), or writes "Add water" on the screen (an error message).
 
 This is exactly the essence of the cybernetic approach in programming: **an object must be a black box that receives messages, manages its hidden state, and returns a result**. This allows us to change the internal logic of the object as much as we want, without breaking the rest of the system that interacts with it.
@@ -480,6 +486,8 @@ Moreover, even Steve Jobs, who was not a programmer, understood this:
 
 > Here’s an example: If I’m your laundry object, you can give me your dirty clothes and **send me a message** that says, “Can you get my clothes laundered, please.” I happen to know where the best laundry place in San Francisco is. And I speak English, and I have dollars in my pockets. So I go out and hail a taxicab and tell the driver to take me to this place in San Francisco. I go get your clothes laundered, I jump back in the cab, I get back here. I give you your clean clothes and say, “Here are your clean clothes.”
 
+{{< figure src="images/14-laundry-object.webp" width="1600" height="900" alt="A sealed crate takes crumpled clothes and a message, returns folded clothes and a reply." caption="Jobs's laundry object. The taxi, the dollars and the best laundry in San Francisco stay inside." loading="lazy" >}}
+
 Alan Kay did not say he took cybernetics specifically as the foundation of OOP. He was inspired by biological cells, considering biology his source of inspiration. Any biological organism is a complex system, and cybernetics can study such systems, just like systems theory. Kay, the creator of Smalltalk, only highlighted a special case of a complex system: the interaction between biological cells.
 
 Now we will explicitly take cybernetics as the foundation of object-oriented programming. We will use this to formulate new principles going forward.
@@ -493,6 +501,8 @@ Regarding artificial intelligence, we are presenting a simple set of principles 
 Because of this, all of them can take part in designing complex systems. Today, with the help of artificial intelligence, not only programmers can write code. At least, almost anyone can create prototypes of software systems.
 
 Systems thinking, along with the ability to design and understand complex systems, is a skill of the 21st century. It is a skill of the AI era, because today AI already knows how to program quite well and build the systems humans describe.
+
+{{< figure src="images/15-spec-to-code.webp" width="1600" height="900" alt="A sheet with a box-and-message diagram, an arrow, and a sheet with a handwritten code skeleton." caption="The drawing is the specification. The code is what the machine writes from it." loading="lazy" >}}
 
 We are left with system design in general, especially in business and enterprise applications. The new principles of object-oriented programming, formulated in the next article based on black boxes and message passing (that is, cybernetics), will help with this.
 
