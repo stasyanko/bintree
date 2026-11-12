@@ -61,7 +61,7 @@ They used craft rules, intuition, and experience, and it worked. The invention o
 
 {{< figure src="images/02-cathedral-and-science.webp" alt="Section through a Gothic nave, with a line tracing the thrust of the vaults down into the foundations." caption="The cathedrals stood for centuries before anyone could calculate why." loading="lazy" >}}
 
-The situation with OOP is similar. It is a powerful practice that developed for a long time **without a single scientific foundation**. I am not talking about the four "pillars" of OOP. They are not a scientific foundation, but sooner engineering practices and programming mechanisms for particular languages.
+The situation with OOP is similar. It is a powerful practice that developed for a long time **without a single scientific foundation**. I am not talking about the four "pillars" of OOP. They are not a scientific foundation, but rather engineering practices and programming mechanisms for particular languages.
 
 The question is: which science should be the foundation of OOP to give it a reliable base? There is no single opinion on this yet, and popular OOP books rarely mention it.
 
