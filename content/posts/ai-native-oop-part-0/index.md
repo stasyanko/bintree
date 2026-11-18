@@ -129,7 +129,7 @@ In the next parts, I will try to explain this clearly. Without "fluff" (or with 
 
 * We will look at why classic OOP principles have run their course and are more like a random set of rules than a complete system.
 * We will show the practical base of the black box approach (yes, it has a scientific basis, and I will link to it).
-* We will design the syntax of our new system design language from scratch.
+* We will design the syntax of our new system design language from scratch for spec driven development.
 * We will see how this works with modern LLMs using real examples.
 
 Does this sound ambitious? Maybe. But the principles I will talk about already work in my pet projects and daily work tasks. 
