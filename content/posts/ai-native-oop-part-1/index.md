@@ -15,6 +15,8 @@ tags:
   - Black Boxes
   - Message Passing
   - Intent-Based Language
+  - Spec Driven Development
+  - Round-trip engineering
 author: Stas Yankovskiy
 showToc: true
 TocOpen: false
