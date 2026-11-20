@@ -514,6 +514,18 @@ Systems thinking, along with the ability to design and understand complex system
 
 We are left with system design in general, especially in business and enterprise applications. The new principles of object-oriented programming, formulated in the next article based on black boxes and message passing (that is, cybernetics), will help with this.
 
+Generating code, though, is only half of the problem. The other half is harder: how do we pin down what we want the AI to build, in a form that people and the machine read the same way? 
+
+And how do we check that what came back is what we asked for? **A prompt in a chat window answers neither question.** It is not versioned, it is not reviewable, and it cannot serve as a criterion of correctness.
+
+This is the problem **spec-driven development** solves. The specification becomes the source of truth: we describe the system first, generate code from that description, and verify the result against the description, not against our memory of the conversation.
+
+The principles we are deriving here are meant to be used for exactly this. Black boxes and messages make a good specification language: a component is described by the messages it accepts and the answers it returns, so **the description doubles as a test**.
+
+Send a message, check the answer, never open the box. That is the same verifiability criterion we used to choose cybernetics, now applied to AI-generated code.
+
+A separate article in this series will cover spec-driven development in detail.
+
 In my experience, cybernetics is more relevant today than ever as a science of complex systems. At the same time, it gives simple and clear tools for this. These tools will be clear to anyone, including non-technical specialists like managers, accountants, economists, systems analysts, and CEOs.
 
 ## Conclusion
