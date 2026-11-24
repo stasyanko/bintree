@@ -149,4 +149,5 @@ Let's just try to look at familiar things from a different angle.
 - [ ] ️🧱 Part 2. The MOBBLOC Principles
 - [ ] 📋 Part 3. The Four Types Of OOP
 - [ ] 🛠️ Part 4. MOBBLOC and Spec Driven Development
-- [ ] 🐹 Part 5. Choosing The Mascot For MOBBLOC Principles
+- [ ] 🎯 Part 5. MOBBLOC in Practice — Teaching AI to Build Black Boxes
+- [ ] 🐹 Part 6. Choosing The Mascot For MOBBLOC Principles
