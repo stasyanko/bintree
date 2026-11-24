@@ -146,8 +146,8 @@ Let's just try to look at familiar things from a different angle.
 
 - [x] 🚀 Part 0. The Blueprint
 - [x] 🎯 [Part 1. The True Essence of OOP: Black Boxes and Message Passing]({{< relref "/posts/ai-native-oop-part-1" >}})
-- [ ] ️🧱 Part 2. The MOBBLOC Principles
-- [ ] 📋 Part 3. The Four Types Of OOP
-- [ ] 🛠️ Part 4. MOBBLOC and Spec Driven Development
-- [ ] 🎯 Part 5. MOBBLOC in Practice — Teaching AI to Build Black Boxes
+- [ ] ️📦 Part 2. The MOBBLOC Principles
+- [ ] ➡️ Part 3. The Four Types Of OOP
+- [ ] 📋 Part 4. MOBBLOC and Spec Driven Development
+- [ ] 🛠️ Part 5. MOBBLOC in Practice — Teaching AI to Build Black Boxes
 - [ ] 🐹 Part 6. Choosing The Mascot For MOBBLOC Principles
