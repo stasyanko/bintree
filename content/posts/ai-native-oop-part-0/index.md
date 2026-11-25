@@ -149,5 +149,5 @@ Let's just try to look at familiar things from a different angle.
 - [ ] ️📦 Part 2. The MOBBLOC Principles
 - [ ] ➡️ Part 3. The Four Types Of OOP
 - [ ] 📋 Part 4. Flow-Bound Spec-Driven Development (FB-SDD) — Theory
-- [ ] 🛠️ Part 5. Flow-Bound Spec-Driven Development — Hands On
+- [ ] 🛠️ Part 5. Flow-Bound Spec-Driven Development (FB-SDD) — Hands On
 - [ ] 🐹 Part 6. Choosing The Mascot For MOBBLOC Principles
